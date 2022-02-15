@@ -1,7 +1,7 @@
 import requests
 
 from pprint import pprint
-TOKEN = 'AQAAAABXKQYSAADLW63F6uobSk3Lsvxui6k-hh8'
+TOKEN = ''
 class YaUploader:
     def __init__(self, token):
         self.token = token
