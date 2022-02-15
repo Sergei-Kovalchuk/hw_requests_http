@@ -1,7 +1,7 @@
 import requests
 
 from pprint import pprint
-TOKEN = ''
+
 class YaUploader:
     def __init__(self, token):
         self.token = token
@@ -26,5 +26,9 @@ class YaUploader:
             print('Файл успешно загружен!')
 
 if __name__ == '__main__':
-    upload_yandex = YaUploader(token = TOKEN)
-    pprint(upload_yandex.upload('netology/Python\hw_request_http\hw_http.txt', 'D:\Python\hw_request_http\hw_http.txt'))
+    
+    disk_file_path = 'netology/Python\hw_request_http\hw_http.txt'
+    filename = 'D:\Python\hw_request_http\hw_http.txt'
+    token = 'AQAAAABXKQYSAADLW63F6uobSk3Lsvxui6k-hh8'
+    uploader = YaUploader(token)
+    result = uploader.upload(disk_file_path, filename)
