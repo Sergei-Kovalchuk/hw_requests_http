@@ -29,6 +29,6 @@ if __name__ == '__main__':
     
     disk_file_path = 'netology/Python\hw_request_http\hw_http.txt'
     filename = 'D:\Python\hw_request_http\hw_http.txt'
-    token = 'AQAAAABXKQYSAADLW63F6uobSk3Lsvxui6k-hh8'
+    token = ''
     uploader = YaUploader(token)
     result = uploader.upload(disk_file_path, filename)
